@@ -1,0 +1,3 @@
+Sheeza AslamAddedAssalam u alaikum
+I am Sheeza Aslam
+I am Practicing File Handling in PHP

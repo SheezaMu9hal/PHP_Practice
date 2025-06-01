@@ -1,0 +1,4 @@
+Course Name: Web Engineering
+Credit Hours: 3
+Number of Practicals: 2
+Subject Teacher: Rashida
