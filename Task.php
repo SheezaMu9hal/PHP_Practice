@@ -46,19 +46,40 @@ of practical, subject teacher). -->
 // ❖ Create a file named “WebEng.txt” and add the details of
 // Web-Engineering course to the file (i.e. course name, credit hours, no.
 // of practical, subject teacher). 
-    $NewFile = fopen("WebEng.txt", "w++");
-    if(!$NewFile){
-        echo "File Doesn't Exist";
-    }else{
+    // $NewFile = fopen("WebEng.txt", "w++");
+    // if(!$NewFile){
+    //     echo "File Doesn't Exist";
+    // }else{
 
-        fwrite($NewFile, "Course Name: Web Engineering\n");
-        fwrite($NewFile, "Credit Hours: 3\n");
-        fwrite($NewFile, "Number of Practicals: 2\n");
-        fwrite($NewFile, "Subject Teacher: Rashida\n");
-        rewind($NewFile);
-        echo "File Created Successfully <br>";
-        $NewContent = fread($NewFile, filesize("WebEng.txt"));
-        echo nl2br($NewContent);
-        fclose($NewFile);
-    }
+    //     fwrite($NewFile, "Course Name: Web Engineering\n");
+    //     fwrite($NewFile, "Credit Hours: 3\n");
+    //     fwrite($NewFile, "Number of Practicals: 2\n");
+    //     fwrite($NewFile, "Subject Teacher: Rashida\n");
+    //     rewind($NewFile);
+    //     echo "File Created Successfully <br>";
+    //     $NewContent = fread($NewFile, filesize("WebEng.txt"));
+    //     echo nl2br($NewContent);
+    //     fclose($NewFile);
+    // }
+
+   echo $_SERVER['PHP_SELF']; // Returns filename of the currently executing script
+echo "<br>";
+
+echo $_SERVER['SERVER_NAME']; // Returns the name of the server host
+echo "<br>";
+
+echo $_SERVER['SERVER_SOFTWARE']; // Returns the server identification string
+echo "<br>";
+
+echo $_SERVER['REMOTE_ADDR']; // Returns the IP address from which the user is viewing the current page
+echo "<br>";
+
+echo $_SERVER['HTTP_USER_AGENT']; // Returns the user agent string of the browser
+echo "<br>";
+
+echo $_SERVER['HTTP_ACCEPT_LANGUAGE']; // Returns the language of the browser
+echo "<br>";
+
+echo $_SERVER['HTTP_ACCEPT_ENCODING']; // Returns the encoding accepted by the browser
+
 ?>
